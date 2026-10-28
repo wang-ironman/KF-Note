@@ -1,0 +1,35 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.kfnote.app'
+    compileSdk 36
+
+    signingConfigs {
+        debug {
+            storeFile rootProject.file('../.tools/debug.keystore')
+            storePassword 'android'
+            keyPassword 'android'
+            keyAlias 'androiddebugkey'
+        }
+    }
+
+    buildFeatures {
+        buildConfig true
+    }
+
+    defaultConfig {
+        applicationId 'com.kfnote.app'
+        minSdk 26
+        targetSdk 36
+        versionCode 6
+        versionName '0.1.5'
+        testInstrumentationRunner 'com.kfnote.app.StoreInstrumentationRunner'
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+}

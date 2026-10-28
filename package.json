@@ -1,0 +1,31 @@
+{
+  "name": "kf-note-prototype",
+  "version": "0.1.5",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node prototype/server.mjs",
+    "test": "node --test prototype/tests/*.test.mjs",
+    "test:browser": "node prototype/tests/browser.mjs",
+    "android:assets": "node scripts/build-android-assets.mjs",
+    "android:build": "pwsh -NoProfile -File scripts/build-android.ps1",
+    "android:setup": "pwsh -NoProfile -File scripts/setup-android.ps1",
+    "test:native-browser": "node prototype/tests/native-browser.mjs",
+    "test:android-ui": "node prototype/tests/android-ui.mjs",
+    "test:cards": "node prototype/tests/card-browser.mjs",
+    "test:location": "node prototype/tests/location-browser.mjs",
+    "test:sections": "node prototype/tests/sections-browser.mjs",
+    "test:fees": "node prototype/tests/fees-browser.mjs",
+    "test:card-actions": "node prototype/tests/card-actions-browser.mjs",
+    "test:photo-copy": "node prototype/tests/photo-copy-browser.mjs",
+    "test:duplicate": "node prototype/tests/duplicate-browser.mjs",
+    "test:media-introduction": "node prototype/tests/media-introduction-browser.mjs"
+  },
+  "dependencies": {
+    "js-sha256": "0.11.1",
+    "jszip": "3.10.1"
+  },
+  "devDependencies": {
+    "esbuild": "0.25.12"
+  }
+}

@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#3072F6">
+  <title>看房日记</title>
+  <link rel="manifest" href="/manifest.webmanifest">
+  <link rel="icon" type="image/svg+xml" href="/icon.svg">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div id="app"><p class="loading">正在打开看房日记…</p></div>
+  <div id="toast" class="toast" role="status" hidden></div>
+  <dialog id="modal"><div id="modal-body"></div></dialog>
+  <script src="/vendor/jszip.min.js"></script>
+  <script src="/vendor/sha256.min.js"></script>
+  <script type="module" src="/app.mjs"></script>
+</body>
+</html>

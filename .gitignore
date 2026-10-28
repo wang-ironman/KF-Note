@@ -1,0 +1,11 @@
+node_modules/
+prototype/vendor/
+prototype/test-results/
+*.log
+.tools/
+android/.gradle/
+android/build/
+android/app/build/
+android/app/src/main/assets/public/
+android/local.properties
+artifacts/
